@@ -1,0 +1,19 @@
+{
+  "name": "sunsniffer-test",
+  "version": "1.0.0",
+  "description": "A test solution for the position of backend developer at sunsniffer",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamolami/sunsniffer.git"
+  },
+  "author": "Musediq Olamilekan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamolami/sunsniffer/issues"
+  },
+  "homepage": "https://github.com/iamolami/sunsniffer#readme"
+}
