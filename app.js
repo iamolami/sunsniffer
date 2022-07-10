@@ -10,7 +10,8 @@ const rateLimiter = require('express-rate-limit');
 const express = require('express')
 const app = express()
 
-const connectDB = require('./db/connect');
+const db = require('./db/connect');
+const suggestionsRoutes = require('./routes/suggestionsRoutes')
 
 app.set('trust proxy', 1);
 app.use(rateLimiter({
@@ -22,17 +23,18 @@ app.use(helmet());
 app.use(cors());
 app.use(xss());
 
-app.use('/api/', require('./routes/suggestionsRoute'))
 
-app.get('/', (req, res) => {
-    res.send('Welcome to Writing impact Server');
+app.get('/api/welcome', (_req, res) => {
+    res.status(200).send({message: 'Welcome to Sunsniffer API'});
 });
+
+app.use("/api/suggestions", suggestionsRoutes)
 
 const PORT = process.env.PORT || 5000;
 
-const start = async() => {
+const start = async () => {
     try {
-        await connectDB(process.env.MONGO_URI);
+        await db.connectDB();
         app.listen(PORT, () => console.log(`Server is listening on port ${PORT}...`));
     } catch (error) {
         console.log(error);
@@ -40,3 +42,5 @@ const start = async() => {
 };
 
 start();
+
+module.exports = app;
