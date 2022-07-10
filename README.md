@@ -14,6 +14,7 @@ This is a RESTAPI that is designed to provides autocomplete suggestions for high
 
 ## Deployed To
 * [![Heroku][Heroku.js]][Heroku-url]
+https://sunsniffer.herokuapp.com/
 
 ## Test with:
 * [![Mocha][Mocha.js]][Mocha-url]
