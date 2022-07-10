@@ -17,7 +17,7 @@ This is a RESRAPI that is designed to provides autocomplete suggestions for high
 
 ## Test with:
 * [![Mocha][Mocha.js]][Mocha-url]
-* [![Cha][Cha.js]][Chai-url]
+* [![Chai][Chai.js]][Chai-url]
 
 <!-- GETTING STARTED -->
 
