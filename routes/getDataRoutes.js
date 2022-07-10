@@ -1,5 +1,5 @@
-const mongoose = require('mongoose')
-const assert = require('assert')
+const mongoose = require('mongoose');
+const assert = require('assert');
 const {StatusCodes} = require('http-status-codes')
 const express = require('express');
 const router = express.Router();
