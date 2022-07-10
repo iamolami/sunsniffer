@@ -1,7 +1,7 @@
 [![MIT License][license-shield]][license-url]
 
-# Coding Task for the position of backend developer at SunSniffer
-This is a RESRAPI that is designed to provides autocomplete suggestions for highly populated cities.
+# About this project
+This is a RESTAPI that is designed to provides autocomplete suggestions for highly populated cities. It is a coding task for the position of backed developer at SunSniffer
 
 
 ### Built With
@@ -60,10 +60,20 @@ To get a local copy up and running follow these simple example steps.
    ```js
 
    MONGO_URI = 'ENTER YOUR CLUSTER LINK';
-   
-   <!-- MARKDOWN LINKS & IMAGES -->
 
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+## Contributing
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b "Your branch name"`)
+3. Commit your Changes (`git commit -m 'Commit message'`)
+4. Push to the Branch (`git push origin 'branch_name'`)
+5. Open a Pull Request
 
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
 
