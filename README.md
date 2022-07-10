@@ -19,6 +19,9 @@ This is a RESTAPI that is designed to provides autocomplete suggestions for high
 * [![Mocha][Mocha.js]][Mocha-url]
 * [![Chai][Chai.js]][Chai-url]
 
+## Postman Documentation
+You can check out the postman documentation at [https://documenter.getpostman.com/view/17842680/UzJPMvNa](https://documenter.getpostman.com/view/17842680/UzJPMvNa)
+
 <!-- GETTING STARTED -->
 
 ## Getting Started
