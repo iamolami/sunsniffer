@@ -1,4 +1,3 @@
-![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
 # Coding Task for the position of backend developer at SunSniffer
@@ -7,8 +6,18 @@ This is a RESRAPI that is designed to provides autocomplete suggestions for high
 
 ### Built With
 
-* [![Npm][Npm]][Npm-url]
 * [![Node][Node.js]][Node-url]
+* [![Express][Express.js]][Express-url]
+
+## Database
+* [![MongoDB][MongoDB.org]][MongoDB-url]
+
+## Deployed To
+* [![Heroku][Heroku.js]][Heroku-url]
+
+## Test with:
+* [![Mocha][Mocha.js]][Mocha-url]
+* [![Cha][Cha.js]][Chai-url]
 
 <!-- GETTING STARTED -->
 
@@ -18,9 +27,6 @@ This is a RESRAPI that is designed to provides autocomplete suggestions for high
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
-
-
 * npm
 
   ```sh
@@ -31,15 +37,13 @@ To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
+1. Get a free database cluster at [https://www.mongodb.com](https://www.mongodb.com)
 
 2. Clone the repo
 
    ```sh
 
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/iamolami/sunsniffer
 
    ```
 
@@ -51,11 +55,11 @@ _Below is an example of how you can instruct your audience on installing and set
 
    ```
 
-4. Enter your API in `config.js`
+4. Enter your MongoDB cluster link in `.env`
 
    ```js
 
-   const API_KEY = 'ENTER YOUR API';
+   MONGO_URI = 'ENTER YOUR CLUSTER LINK';
    
    <!-- MARKDOWN LINKS & IMAGES -->
 
@@ -87,9 +91,29 @@ _Below is an example of how you can instruct your audience on installing and set
 
 [product-screenshot]: images/screenshot.png
 
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[Node.js]: https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
 
-[Next-url]: https://nextjs.org/
+[Node-url]: https://nodejs.org/
+
+[Express.js]: https://img.shields.io/badge/Express.js-404D59?style=for-the-badge
+
+[Express-url]: https://expressjs.com/
+
+[MongoDB.org]: https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white
+
+[MongoDB-url]: https://www.mongodb.com/
+
+[Heroku.js]: https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white
+
+[Heroku-url]: https://heroku.com/
+
+[Mocha.js]: https://img.shields.io/badge/mocha.js-323330?style=for-the-badge&logo=mocha&logoColor=Brown
+
+[Mocha-url]: https://mochajs.org/
+
+[Chai.js]: https://img.shields.io/badge/chai.js-323330?style=for-the-badge&logo=chai&logoColor=red
+
+[Chai-url]: https://www.chaijs.com/
 
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 
