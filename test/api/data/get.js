@@ -24,7 +24,18 @@ describe('Test Data Collection', () => {
             })
     })
 
-    it('should verify that we have data in the Database', (done) => {
+    it('should verify that we have all data in the Database', (done) => {
+        chai.request(app)
+            .get('/api/getData')
+            .end((_err, res) => {
+                res.should.have.status(200);
+                res.body.should.be.a('array');
+                res.body.length.should.be.eql(2797);
+                done();
+            });
+    });
+
+    it('should verify that we have this data in the Database', (done) => {
         chai.request(app)
             .get('/api/suggestions?q=lond&latitude=42.98339&longitude=-81.23304')
             .end((_err, res) => {

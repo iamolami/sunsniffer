@@ -11,7 +11,10 @@ const express = require('express')
 const app = express()
 
 const db = require('./db/connect');
+
+//Routes
 const suggestionsRoutes = require('./routes/suggestionsRoutes')
+const getDataRoutes = require('./routes/getDataRoutes')
 
 app.set('trust proxy', 1);
 app.use(rateLimiter({
@@ -29,6 +32,7 @@ app.get('/api/welcome', (_req, res) => {
 });
 
 app.use("/api/suggestions", suggestionsRoutes)
+app.use("/api/getData", getDataRoutes)
 
 const PORT = process.env.PORT || 5000;
 
