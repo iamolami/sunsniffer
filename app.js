@@ -27,8 +27,8 @@ app.use(cors());
 app.use(xss());
 
 
-app.get('/api/welcome', (_req, res) => {
-    res.status(200).send({message: 'Welcome to Sunsniffer API'});
+app.get('/', (_req, res) => {
+    res.send('Welcome to Sunsniffer API');
 });
 
 app.use("/api/suggestions", suggestionsRoutes)

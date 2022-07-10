@@ -12,18 +12,6 @@ chai.use(chaiHttp);
 
 describe('Test Data Collection', () => {
 
-    it('Test API welcome route...', (done) => {
-        chai.request(app)
-            .get('/api/welcome')
-            .end((_err, res) => {
-                res.should.have.status(200);
-                res.body.should.be.a('object');
-                const actualVal = res.body.message;
-                expect(actualVal).to.be.equal('Welcome to Sunsniffer API');
-                done();
-            })
-    })
-
     it('should verify that we have all data in the Database', (done) => {
         chai.request(app)
             .get('/api/getData')
